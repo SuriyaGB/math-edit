@@ -1,0 +1,5 @@
+com/gbrit/util/Constant.class
+com/gbrit/CorsConfig.class
+com/gbrit/GatewayConfig.class
+com/gbrit/controller/HealthController.class
+com/gbrit/GatewayApplication.class

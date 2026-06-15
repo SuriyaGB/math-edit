@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0.2
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    networks:
+      - smart
+    restart: always
+    healthcheck:
+      test: "exit 0"
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  smart:
+    name: smart

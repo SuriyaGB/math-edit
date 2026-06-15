@@ -1,0 +1,7 @@
+FROM eclipse-temurin:17-jre
+WORKDIR /app
+COPY target/*.jar gateway-server.jar
+EXPOSE 8084
+CMD ["java", "-jar", "gateway-server.jar"]
+
+
